@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Universial Margin and padding defaulted to zero. */
+
+/* body{
+  width: 100vw;
+  height: 100vh;
+} */
+
+.result-container{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(236, 240, 241, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Result container designed */
+
+.result-mainpage{
+  padding: 3%;
+  width: 70%;
+  height: 95%;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* main page designed */
+
+.heading-display{
+  margin: 10px;
+  padding: 15px;
+}
+/* margin and padding for heading added */
+
+.heading-display h1{
+  color: rgba(0, 168, 255, 1);
+}
+/* heading style added */
+
+.result-description{
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Result description designed */
+
+.result-description p{
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* Paragraph added */
+
+/* span designed */
+.result-description span{
+  font-weight: 900;
+  color: red;
+}
+
+/* button designed by declaring margin, padding and width */
+.button-final button{
+  margin: 15px;
+  padding: 10px;
+  width: 111px;
+  border: 2px solid rgba(0, 168, 255, 1);
+  background-color: rgb(190, 231, 252);
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* Hover effect added... */
+.button-final button:hover{
+  color: white;
+  background-color: rgba(0, 168, 255, 1);
+}
+
+
+/* Media query for cross-browser */
+@media screen and (max-width: 635px) {
+  .result-mainpage{
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}

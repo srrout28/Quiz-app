@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App | Test Book</title>
+    <link rel="shortcut icon" href="test_book_logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Stylesheet added. -->
+  </head>
+  <body onload="gotoHome()">
+    <!-- In body goto function called -->
+    <div class="mainpage-container">
+      <main class="mp-top-container">
+        <img class="logo" src="test_book_logo_main.png" alt="Test Book Logo" width="150px" />
+        <!-- Logo of Testbook -->
+        <h1>Hello <span id="user-name-here">User</span>!</h1>
+        <h4>Enter Your name to continue the quiz.</h4>
+        <div class="user-input">
+          <input type="text" id="input-box" placeholder="Enter Your Name Here..."/>
+          <button type="button" id="input-enter" onclick="callUserName()">Enter</button>
+        </div>
+        <p>You will get <span class="blink-me"> 10 seconds</span> for each question.</p>
+      </main>
+      <footer class="mp-btm-container"> <!-- Main page bottom container -->
+        <h1>Select Catagory</h1>
+        <h4>
+          These Catagory button will navigate us to a list of 10 questions each.
+        </h4>
+        <div class="catagory-btn"> <!-- Catagoty option button -->
+          <a class="btn-option-A" href="quiz_page.html"><button id="selectionA" onclick="selectionOpA()">Pipe And Cisterns</button></a>
+          <a class="btn-option-B" href="quiz_page.html"><button id="selectionB" onclick="selectionOpB()">Probability</button></a>
+          <a class="btn-option-C" href="quiz_page.html"><button id="selectionc" onclick="selectionOpC()">Problem on Age</button></a>
+          <a class="btn-option-D" href="quiz_page.html"><button id="selectionD" onclick="selectionOpD()">Profit and Loss</button></a>
+        </div>
+      </footer>
+    </div>
+    <!-- Javascript and question-answer linked -->
+    <script src="qna.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

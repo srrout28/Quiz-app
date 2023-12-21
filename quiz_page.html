@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Page | Skill Academy</title>
+    <link rel="shortcut icon" href="test_book_logo.png" type="image/x-icon" />
+    <!-- logo added to tab -->
+    <link rel="stylesheet" href="quiz_page.css" />
+    <!-- Stylesheet linked -->
+  </head>
+  <body onload="loadQuestions()"> <!-- Onbody question loaded -->
+    <div class="quizpage-container"> <!-- Main container -->
+      <main class="quiz-main-container"> <!-- Main quiz container -->
+        <h1 id="catagory-heading">Catagoty of Questions</h1> <!-- Heading h1 tag -->
+        <div class="socre-board">
+          <div class="time-span">10</div>
+          <div class="score-obtained">Score: <span id="my-score">0</span></div>
+        </div>
+        <div class="question-display-partision">
+          <div class="question-counter"><span id="qstn-sl-count">0</span>/10</div>
+          <div class="question-display-board">Your question will appear here.</div>
+        </div>
+        <div class="option-answer"> <!-- All four options added below-->
+          <button id="option-a" value="a" onclick="answerCheckera()">Option 1</button>
+          <button id="option-b" value="b" onclick="answerCheckerb()">Option 2</button>
+          <button id="option-c" value="c" onclick="answerCheckerc()">Option 3</button>
+          <button id="option-d" value="d" onclick="answerCheckerd()">Option 4</button>
+        </div>
+        <div class="next-qstn">
+          <a href="result_page.html" id="submit-anchor">
+            <button id="submit-btn">Submit</button>
+          </a>
+          <button id="previous-question" onclick="PreviousQuestion()">Previous Question</button>
+          <button id="next-question" onclick="nextQuestion()">Next Question</button>
+          <!-- Previous and next button inserted -->
+        </div>
+      </main>
+    </div>
+    <!-- JS and QnA linked -->
+    <script src="qna.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
